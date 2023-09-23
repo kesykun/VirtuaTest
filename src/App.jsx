@@ -1,9 +1,10 @@
-import Faq from "./pages/FAQ/Faq";
+import EnrollmentForm from "./pages/EnrollmentForm/EnrollmentForm";
+//import Faq from "./pages/FAQ/Faq";
 
 const App = () => {
     return (
         <>
-            <Faq />
+            <EnrollmentForm />
         </>
     );
 };
