@@ -9,7 +9,12 @@ const SelectCourse = ({ key, courseObj, courseExpanded, selectedCourses, setSele
         setSelectedCourses(tempSelectedCourses);
     }
     useEffect(() => {
-        addToSelectedCourses();
+        if (checkBoxStatus === true) {
+            addToSelectedCourses();
+        } else {
+            setSelectedCourses(selectedCourses.filter((item) => item.id === courseObj.id));
+        }
+        
         console.log({ title: courseObj.title, checked: checkBoxStatus});
     }, [checkBoxStatus]);
     return (

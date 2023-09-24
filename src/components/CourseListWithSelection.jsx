@@ -5,7 +5,7 @@ const CourseListWithSelection = ({ courses, coursesExpanded, setCoursesExpanded,
     for(let i=0; i<courses.length; i++) {
         coursesInJsx.push(
                 <SelectCourse 
-                    key={ i+1 } 
+                    key={ courses[i].id } 
                     courseObj={ courses[i] } 
                     allExpanded={ coursesExpanded } 
                     selectedCourses={ selectedCourses }

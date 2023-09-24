@@ -15,10 +15,22 @@ const SelectedCourses = ({ selectedCourses }) => {
     return (
         <section className="ubox">
                 <div className="ubox_head">
-                    <h1>Head</h1>
+                    <h1>Selected Courses</h1>
                 </div>
                 <div className="ubox_body">
                     <table>
+                        <tr>
+                            <th style={
+                                {
+                                    width: "300px"
+                                }
+                            }>Course Name</th>
+                            <th style={
+                                {
+                                    width: "500px"
+                                }
+                            }>Description</th>
+                        </tr>
                         { selectedCoursesInJsx }
                     </table>
                 </div>

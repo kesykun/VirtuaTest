@@ -11,6 +11,7 @@ const App = () => {
     const [coursesExpanded, setCoursesExpanded] = useState(false);
     const [courses, setCourses] = useState([
       {
+        id: 0,
         title: "Introduction to Web Development",
         price: 49.99,
         instructor: "Luisito Santos",
@@ -18,6 +19,7 @@ const App = () => {
         instructor_contact_no: "+639123456701"
       },
       {
+        id: 1,
         title: "Data Science and Machine Learning Masterclass",
         price: 79.99,
         instructor: "Maria dela Cruz",
@@ -25,6 +27,7 @@ const App = () => {
         instructor_contact_no: "+639123456702"
       },
       {
+        id: 2,
         title: "Graphic Design Fundamentals",
         price: 39.99,
         instructor: "Antonio Reyes",
@@ -32,6 +35,7 @@ const App = () => {
         instructor_contact_no: "+639123456703"
       },
       {
+        id: 3,
         title: "Advanced JavaScript and ES6",
         price: 59.99,
         instructor: "Isabella Ramos",
@@ -39,6 +43,7 @@ const App = () => {
         instructor_contact_no: "+639123456704"
       },
       {
+        id: 4,
         title: "Mobile App Development with React Native",
         price: 69.99,
         instructor: "Josefino Garcia",
@@ -46,6 +51,7 @@ const App = () => {
         instructor_contact_no: "+639123456705"
       },
       {
+        id: 5,
         title: "Python for Data Analysis and Visualization",
         price: 54.99,
         instructor: "Rosa Caballero",
@@ -53,6 +59,7 @@ const App = () => {
         instructor_contact_no: "+639123456706"
       },
       {
+        id: 6,
         title: "Digital Marketing Strategy and SEO",
         price: 49.99,
         instructor: "Eduardo Santos",
@@ -60,6 +67,7 @@ const App = () => {
         instructor_contact_no: "+639123456707"
       },
       {
+        id: 7,
         title: "Introduction to Artificial Intelligence",
         price: 64.99,
         instructor: "Sofia Villanueva",
@@ -67,6 +75,7 @@ const App = () => {
         instructor_contact_no: "+639123456708"
       },
       {
+        id: 8,
         title: "Cybersecurity and Ethical Hacking",
         price: 74.99,
         instructor: "Emilio Reyes",
@@ -74,6 +83,7 @@ const App = () => {
         instructor_contact_no: "+639123456709"
       },
       {
+        id: 9,
         title: "Game Development with Unity",
         price: 59.99,
         instructor: "Gabriela Gomez",
@@ -81,6 +91,7 @@ const App = () => {
         instructor_contact_no: "+639123456710"
       },
       {
+        id: 10,
         title: "Photography Masterclass",
         price: 44.99,
         instructor: "Luisa Garcia",
@@ -88,6 +99,7 @@ const App = () => {
         instructor_contact_no: "+639123456711"
       },
       {
+        id: 11,
         title: "Full Stack Web Development with MERN",
         price: 69.99,
         instructor: "Ramon Cruz",
@@ -95,6 +107,7 @@ const App = () => {
         instructor_contact_no: "+639123456712"
       },
       {
+        id: 12,
         title: "Digital Illustration and Vector Art",
         price: 49.99,
         instructor: "Isabelita Santos",
@@ -102,6 +115,7 @@ const App = () => {
         instructor_contact_no: "+639123456713"
       },
       {
+        id: 13,
         title: "React.js for Beginners",
         price: 39.99,
         instructor: "Mateo dela Rosa",
@@ -109,6 +123,7 @@ const App = () => {
         instructor_contact_no: "+639123456714"
       },
       {
+        id: 14,
         title: "Advanced Data Structures and Algorithms",
         price: 59.99,
         instructor: "Carolina Reyes",
@@ -116,6 +131,7 @@ const App = () => {
         instructor_contact_no: "+639123456715"
       },
       {
+        id: 15,
         title: "Social Media Marketing Strategy",
         price: 49.99,
         instructor: "Rafaelito Gomez",
@@ -123,6 +139,7 @@ const App = () => {
         instructor_contact_no: "+639123456716"
       },
       {
+        id: 16,
         title: "Introduction to Natural Language Processing",
         price: 64.99,
         instructor: "Anastacia Caballero",
@@ -130,6 +147,7 @@ const App = () => {
         instructor_contact_no: "+639123456717"
       },
       {
+        id: 17,
         title: "Ethical Hacking and Penetration Testing",
         price: 74.99,
         instructor: "Vicente Santos",
@@ -137,6 +155,7 @@ const App = () => {
         instructor_contact_no: "+639123456718"
       },
       {
+        id: 18,
         title: "2D Game Development with Godot Engine",
         price: 54.99,
         instructor: "Angelica Rivera",
@@ -144,6 +163,7 @@ const App = () => {
         instructor_contact_no: "+639123456719"
       },
       {
+        id: 19,
         title: "Blockchain and Cryptocurrency Fundamentals",
         price: 59.99,
         instructor: "Santiago Cruz",
