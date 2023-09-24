@@ -1,10 +1,8 @@
 import Accordion from "../../components/Accordion";
-import NavBar from "../../components/NavBar";
 
 const Faq = () => {
     return (
         <>
-            <NavBar />
             <section className="faq__section">
                 <div className="faq__heading">
                     <h1>Questions? Look here.</h1>
