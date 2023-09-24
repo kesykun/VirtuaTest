@@ -37,12 +37,15 @@ const EnrollmentForm = ({ courses, setCourses, coursesExpanded, setCoursesExpand
         <>
             <section className="enrollment__section">
                 <SelectedCourses selectedCourses={ selectedCourses } />
-                <CourseListWithSelection  
+                <div className="courseListWithSelection_Cont">
+                    <CourseListWithSelection  
                         courses={ courses } 
                         coursesExpanded={ coursesExpanded }
                         setCoursesExpanded={ setCoursesExpanded } 
                         selectedCourses={ selectedCourses } 
-                        setSelectedCourses={ setSelectedCourses } />
+                        setSelectedCourses={ setSelectedCourses } 
+                    />
+                </div>
                 <div className="form_cont">
                     <div className="enrollment__heading">
                         <h1>Please fill out this form to enroll.</h1>
