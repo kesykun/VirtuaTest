@@ -5,6 +5,7 @@ import NavBar from './components/NavBar';
 import CourseListPage from "./pages/CourseList/CourseListPage";
 import EnrollmentForm from "./pages/EnrollmentForm/EnrollmentForm";
 import Faq from "./pages/FAQ/Faq";
+import Calendar from "./pages/Calendar/Calendar";
 
 const App = () => {
     const [coursesExpanded, setCoursesExpanded] = useState(false);
@@ -86,15 +87,14 @@ const App = () => {
                 <NavBar />
                 <Routes>
                     <Route path='/' element={<h1>Para sa Home Page</h1>} />
-                    <Route path='/courses' element={
-                                                    <CourseListPage 
+                    <Route path='/courses' element={<CourseListPage 
                                                     courses={ courses }
                                                     setCourses={ setCourses }
                                                     coursesExpanded={ coursesExpanded }
                                                     setCoursesExpanded={ setCoursesExpanded }/>
                                                 } />
                     <Route path='/faq' element={<Faq />} />
-                    <Route path='/calendar' element={<h1>Para sa Calendar</h1>} />
+                    <Route path='/calendar' element={<Calendar />} />
                     <Route path='/enrollment' element={<EnrollmentForm 
                                                     courses={ courses }
                                                     setCourses={ setCourses }
