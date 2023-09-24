@@ -1,10 +1,10 @@
 
 import AccordionForCourse from "./AccordionForCourse";
 
-const Course = ({ key, courseObj, allExpanded }) => {
+const Course = ({ key, courseObj, allExpanded, checkBox='' }) => {
     return (
         <AccordionForCourse key={ key } 
-        title={ courseObj.title } 
+        title={ [courseObj.title, <hr/>, checkBox] } 
         body={ 
           [
             <div className="courseDescription">
