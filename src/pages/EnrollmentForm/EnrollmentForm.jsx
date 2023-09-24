@@ -98,9 +98,7 @@ const EnrollmentForm = ({ courses, setCourses, coursesExpanded, setCoursesExpand
                         setSelectedCourses={ setSelectedCourses } />
                         <button>Submit</button>
                     </form>
-                    <SelectedCourses 
-                    selectedCourses={ selectedCourses }
-                    />
+                    <SelectedCourses selectedCourses={ selectedCourses } />
                 </div>
             </section>
         </>
