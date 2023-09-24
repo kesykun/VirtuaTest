@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import FormInput from "../../components/FormInput";
 import CourseListWithSelection from "../../components/CourseListWithSelection";
+import SelectedCourses from "../../components/SelectedCourses";
 import "./css/EnrollmentForm.css";
 
-const EnrollmentForm = ({ courses, setCourses, coursesExpanded, setCoursesExpanded }) => {
+const EnrollmentForm = ({ courses, setCourses, coursesExpanded, setCoursesExpanded, selectedCourses, setSelectedCourses }) => {
     
     // Initialize state variables for form data
     const [formData, setFormData] = useState({
@@ -20,7 +21,7 @@ const EnrollmentForm = ({ courses, setCourses, coursesExpanded, setCoursesExpand
     // Handle form submission
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("Form Data: ", formData)
+        console.log("Form Data: ", formData);
     }
 
     // Handle input field changes and update the state
@@ -92,9 +93,14 @@ const EnrollmentForm = ({ courses, setCourses, coursesExpanded, setCoursesExpand
                         <CourseListWithSelection  
                         courses={ courses } 
                         coursesExpanded={ coursesExpanded }
-                        setCoursesExpanded={ setCoursesExpanded } />
+                        setCoursesExpanded={ setCoursesExpanded } 
+                        selectedCourses={ selectedCourses } 
+                        setSelectedCourses={ setSelectedCourses } />
                         <button>Submit</button>
                     </form>
+                    <SelectedCourses 
+                    selectedCourses={ selectedCourses }
+                    />
                 </div>
             </section>
         </>

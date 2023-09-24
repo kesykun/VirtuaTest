@@ -1,13 +1,15 @@
 import SelectCourse from "./SelectCourse";
 
-const CourseListWithSelection = ({ courses, coursesExpanded, setCoursesExpanded }) => {
+const CourseListWithSelection = ({ courses, coursesExpanded, setCoursesExpanded, selectedCourses, setSelectedCourses }) => {
     let coursesInJsx = [];
     for(let i=0; i<courses.length; i++) {
         coursesInJsx.push(
                 <SelectCourse 
                 key={ i+1 } 
                 courseObj={ courses[i] } 
-                allExpanded={ coursesExpanded } />
+                allExpanded={ coursesExpanded } 
+                selectedCourses={ selectedCourses }
+                setSelectedCourses={ setSelectedCourses } />
             );
     }
     return (

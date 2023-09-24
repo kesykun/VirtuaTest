@@ -14,7 +14,7 @@ const CourseListPage = ({ courses, setCourses, coursesExpanded, setCoursesExpand
             courses={ courses } 
             coursesExpanded={ coursesExpanded }
             setCoursesExpanded={ setCoursesExpanded }/>
-            <SelectedCourses />
+            {/* <SelectedCourses /> */}
         </>
     );
 };
