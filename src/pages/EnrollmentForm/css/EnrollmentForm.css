@@ -10,33 +10,27 @@
     overflow-x: hidden;
 }
 
-
-
-.courselist__section {
-    margin-left: 4em;
-    width: 50em;
-    scrollbar-width: 2px;
+.enrollment__section .courseListWithSelection_Cont {
+    position: absolute;
+    top: 60%;
+    left: 5%;
 }
-.courselist__section .allCourses {
+
+.courselist_with_selection__section {
+    margin: 0;
+    padding: 0;
+    width: 47rem;
+}
+.courselist_with_selection__section .allCourses {
     overflow-y: scroll;
-    height: 26em;
+    height: 13rem;
 }
-.courselist__section .allCourses::-webkit-scrollbar {
+.courselist_with_selection__section .allCourses::-webkit-scrollbar {
     width: 0.4em;
     background-color: #EFEFEF;
 }
-.courselist__top {
-    padding: 1.5rem;
-}
-.courselist__top div {
-    width: 10rem;
-}
-.courselist__top div label {
-    font-family : Arial, Helvetica, sans-serif;
-    font-size: 0.85rem;
-    margin: 1.2em;
-    font-weight: 600;
-}
+
+
 
 
 /* AccordionForCourse */
@@ -104,7 +98,7 @@
 
 .ubox {
     position: absolute;
-    top: 25%;
+    top: 22%;
     left: 5%;
     width: 55%;
     background-color: #444;
