@@ -1,4 +1,3 @@
-import React from 'react';
 /* eslint-disable react/prop-types */
 import { useState } from "react"; 
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";

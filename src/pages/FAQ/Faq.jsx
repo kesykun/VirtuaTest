@@ -1,6 +1,4 @@
-import React from 'react';
 import Accordion from "../../components/Accordion";
-import NavBar from "../../components/NavBar";
 
 const Faq = () => {
     return (

@@ -88,7 +88,7 @@ const EnrollmentForm = () => {
                             value={formData.GuardianContactNumber}
                             onChange={handleInputChange}
                         />
-                        {/* <CourseList /> */}
+                        <CourseList /> 
                         <button>Submit</button>
                     </form>
                 </div>
