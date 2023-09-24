@@ -1,0 +1,34 @@
+import SelectCourse from "./SelectCourse";
+
+const CourseListWithSelection = ({ courses, coursesExpanded, setCoursesExpanded, selectedCourses, setSelectedCourses }) => {
+    let coursesInJsx = [];
+    for(let i=0; i<courses.length; i++) {
+        coursesInJsx.push(
+                <SelectCourse 
+                key={ i+1 } 
+                courseObj={ courses[i] } 
+                allExpanded={ coursesExpanded } 
+                selectedCourses={ selectedCourses }
+                setSelectedCourses={ setSelectedCourses } />
+            );
+    }
+    return (
+        <section className="courselist__section">
+            <div className="courselist__top">
+                <div>
+                    <label htmlFor="expandAllCourse">Expand All</label>
+                    <input 
+                    id="expandAllCourse" 
+                    type="checkbox" 
+                    checked={ !coursesExpanded }
+                    onChange={ () => setCoursesExpanded( !coursesExpanded ) }/>
+                </div>
+            </div>
+            <div className="allCourses">
+                { coursesInJsx }
+            </div>
+        </section>
+    );
+};
+
+export default CourseListWithSelection;
