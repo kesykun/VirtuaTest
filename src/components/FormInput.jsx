@@ -1,3 +1,4 @@
+import React from 'react';
 const FormInput = (props) => {
     return (
       <div className="FormInput">

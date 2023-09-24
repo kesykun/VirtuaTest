@@ -1,3 +1,4 @@
+import React from 'react';
 /* eslint-disable react/prop-types */
 import { useState } from "react"; 
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
@@ -17,7 +18,9 @@ const Accordion = ({ title, body }) => {
                     ) : (
                         <AiOutlinePlus size={24} />
                     )}
-                    <h1 className="Accordion__header__title">{title}</h1>
+                    <div>
+                        <h1 className="Accordion__header__title">{title}</h1>
+                    </div>
                 </button>
                 <div className={`${isOpen ? "active" : ""} Accordion__body`}>
                     <p className="Accordion__body__text">{body}</p>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import NavBar from "../../components/NavBar";
 import FormInput from "../../components/FormInput";
+import CourseList from '../CourseList/CourseList';
 
 const EnrollmentForm = () => {
     
@@ -33,7 +33,6 @@ const EnrollmentForm = () => {
 
     return (
         <>
-            <NavBar />
             <section className="enrollment__section">
                 <div className="enrollment__heading">
                     <h1>Please fill out this form to enroll.</h1>
@@ -89,6 +88,7 @@ const EnrollmentForm = () => {
                             value={formData.GuardianContactNumber}
                             onChange={handleInputChange}
                         />
+                        {/* <CourseList /> */}
                         <button>Submit</button>
                     </form>
                 </div>
