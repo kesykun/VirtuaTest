@@ -91,14 +91,15 @@ const EnrollmentForm = ({ courses, setCourses, coursesExpanded, setCoursesExpand
                             onChange={handleInputChange}
                         />
                         <CourseListWithSelection  
-                        courses={ courses } 
-                        coursesExpanded={ coursesExpanded }
-                        setCoursesExpanded={ setCoursesExpanded } 
-                        selectedCourses={ selectedCourses } 
-                        setSelectedCourses={ setSelectedCourses } />
+                            courses={ courses } 
+                            coursesExpanded={ coursesExpanded }
+                            setCoursesExpanded={ setCoursesExpanded } 
+                            selectedCourses={ selectedCourses } 
+                            setSelectedCourses={ setSelectedCourses } />
+                        <SelectedCourses selectedCourses={ selectedCourses } />
                         <button>Submit</button>
                     </form>
-                    <SelectedCourses selectedCourses={ selectedCourses } />
+                    
                 </div>
             </section>
         </>
