@@ -12,15 +12,15 @@
   .centered-content {
     text-align: center;
     background-color: #F0F0F0;
-    padding: 20px; /* Reduce padding for space within the container */
+    padding: 20px; /* Reduce padding for spacing within the container */
     border: 1px solid #213555;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    border-top: 30px solid #213555; /* Top border with a different color */
+    border-top: 30px solid #213555; /* Add a top border with a different color */
   }
   
   /* Add spacing for elements within centered-content */
   .centered-content p {
-    margin: 10px 0; /* Adjust the margin */
+    margin: 10px 0; /* Adjust the margin to add spacing between paragraphs or elements */
   }
   

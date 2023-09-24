@@ -102,9 +102,6 @@ const EnrollmentForm = ({ courses, setCourses, coursesExpanded, setCoursesExpand
                     selectedCourses={ selectedCourses }
                     />
                 </div>
-                <div>
-                <CourseList /> 
-                </div>
             </section>
         </>
     );

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactCalendar from 'react-calendar';
-import './css/calendar.css';
+import './css/Calendar.css';
 
 const Calendar = () => {
   // Define state variables for the selected date and events
