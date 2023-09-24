@@ -36,11 +36,18 @@ const EnrollmentForm = ({ courses, setCourses, coursesExpanded, setCoursesExpand
     return (
         <>
             <section className="enrollment__section">
-                <div className="enrollment__heading">
-                    <h1>Please fill out this form to enroll.</h1>
-                    <p>And press "Submit" when you've completed this form</p>
-                </div>
-                <div>
+                <SelectedCourses selectedCourses={ selectedCourses } />
+                <CourseListWithSelection  
+                        courses={ courses } 
+                        coursesExpanded={ coursesExpanded }
+                        setCoursesExpanded={ setCoursesExpanded } 
+                        selectedCourses={ selectedCourses } 
+                        setSelectedCourses={ setSelectedCourses } />
+                <div className="form_cont">
+                    <div className="enrollment__heading">
+                        <h1>Please fill out this form to enroll.</h1>
+                        <p>And press "Submit" when you've completed this form</p>
+                    </div>
                     <form onSubmit={handleSubmit}>
                         <FormInput 
                             name="StudentFirstName" 
@@ -90,15 +97,8 @@ const EnrollmentForm = ({ courses, setCourses, coursesExpanded, setCoursesExpand
                             value={formData.GuardianContactNumber}
                             onChange={handleInputChange}
                         />
-                        <CourseListWithSelection  
-                        courses={ courses } 
-                        coursesExpanded={ coursesExpanded }
-                        setCoursesExpanded={ setCoursesExpanded } 
-                        selectedCourses={ selectedCourses } 
-                        setSelectedCourses={ setSelectedCourses } />
                         <button>Submit</button>
                     </form>
-                    <SelectedCourses selectedCourses={ selectedCourses } />
                 </div>
             </section>
         </>

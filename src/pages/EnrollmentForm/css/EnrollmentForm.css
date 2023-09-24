@@ -104,11 +104,12 @@
 
 .ubox {
     position: absolute;
-    top: 10rem;
-    left: 55rem;
-    width: 26rem;
+    top: 25%;
+    left: 5%;
+    width: 55%;
     background-color: #444;
     padding: 0;
+    height: 35%;
 }
 .ubox .ubox_head {
     text-align: center;
@@ -117,7 +118,7 @@
 }
 .ubox .ubox_body {
     text-align: center;
-    height: 25em;
+    height: 83.5%;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     background: #D9D9D9;
 }
