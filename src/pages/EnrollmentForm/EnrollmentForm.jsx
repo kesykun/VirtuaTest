@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import NavBar from "../../components/NavBar";
 import FormInput from "../../components/FormInput";
+import CourseListWithSelection from "../../components/CourseListWithSelection";
+import "./css/EnrollmentForm.css";
 
-const EnrollmentForm = () => {
+const EnrollmentForm = ({ courses, setCourses, coursesExpanded, setCoursesExpanded }) => {
     
     // Initialize state variables for form data
     const [formData, setFormData] = useState({
@@ -33,7 +34,6 @@ const EnrollmentForm = () => {
 
     return (
         <>
-            <NavBar />
             <section className="enrollment__section">
                 <div className="enrollment__heading">
                     <h1>Please fill out this form to enroll.</h1>
@@ -89,6 +89,10 @@ const EnrollmentForm = () => {
                             value={formData.GuardianContactNumber}
                             onChange={handleInputChange}
                         />
+                        <CourseListWithSelection  
+                        courses={ courses } 
+                        coursesExpanded={ coursesExpanded }
+                        setCoursesExpanded={ setCoursesExpanded } />
                         <button>Submit</button>
                     </form>
                 </div>
