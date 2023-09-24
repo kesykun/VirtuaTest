@@ -5,7 +5,7 @@ import NavBar from './components/NavBar';
 import CourseListPage from "./pages/CourseListPage/CourseListPage";
 import EnrollmentForm from "./pages/EnrollmentForm/EnrollmentForm";
 import Faq from "./pages/FAQ/Faq";
-import Calendar from "./pages/Calendar/Calendar";
+import Calendar from "./pages/Calendar/calendar";
 
 const App = () => {
     const [coursesExpanded, setCoursesExpanded] = useState(false);
