@@ -13,18 +13,17 @@ const SelectCourse = ({ key, courseObj, courseExpanded, selectedCourses, setSele
         console.log({ title: courseObj.title, checked: checkBoxStatus});
     }, [checkBoxStatus]);
     return (
-        [
-            <input 
-            type="checkbox" 
-            checked={ checkBoxStatus }
-            onChange={ () => setCheckBoxStatus(!checkBoxStatus) }
-            />,
             <Course 
             key={ key } 
             courseObj={ courseObj } 
-            allExpanded={ courseExpanded } />
-            
-        ]
+            allExpanded={ courseExpanded } 
+            checkBox={
+                <input 
+                    type="checkbox" 
+                    checked={ checkBoxStatus }
+                    onChange={ () => setCheckBoxStatus(!checkBoxStatus) }
+                />
+            }/>
     );
 }
 

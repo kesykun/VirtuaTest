@@ -97,7 +97,7 @@ const EnrollmentForm = ({ courses, setCourses, coursesExpanded, setCoursesExpand
                             value={formData.GuardianContactNumber}
                             onChange={handleInputChange}
                         />
-                        <button>Submit</button>
+                        <button className="enrollButton">Submit</button>
                     </form>
                 </div>
             </section>

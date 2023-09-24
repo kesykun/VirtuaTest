@@ -158,7 +158,7 @@ a {
 }
   
   /* Style the submit button */
-.enrollment__section button {
+.enrollment__section .enrollButton {
     background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
@@ -168,7 +168,7 @@ a {
 }
   
   /* Hover effect for the submit button */
-.enrollment__section button:hover {
+.enrollment__section .enrollButton:hover {
     background-color: #0056b3;
 }
 
