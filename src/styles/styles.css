@@ -136,6 +136,12 @@ a {
     font-size: 24px;
     margin-bottom: 10px;
 }
+
+.enrollment__section .form_cont {
+    position: absolute;
+    top: 25%;
+    left: 70%;
+}
   
   /* Style the form inputs using the FormInput component */
 .FormInput {
